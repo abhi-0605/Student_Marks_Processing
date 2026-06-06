@@ -67,20 +67,20 @@ function processdata(){
     document.getElementById("output").innerHTML=
     `<h3>Results</h3>
 
-    <p><strong>student:</strong> ${names.join(", ")}</p>
-    <p><strong>totalmark:</strong> ${totalmark}</p>
-    <p><strong>Average Marks:</strong> ${avgmarks.toFixed(2)}</p>
-    <p><strong>Highest Marks:</strong> ${highestmark}</p>
-    <p><strong>Lowest Marks:</strong> ${lowestmark}</p>
-    <p><strong>Passed Student:</strong> 
+    <p><strong>Students: </strong> ${names.join(", ")}</p>
+    <p><strong>Total mark: </strong> ${totalmark}</p>
+    <p><strong>Average Marks: </strong> ${avgmarks.toFixed(2)}</p>
+    <p><strong>Highest Marks: </strong> ${highestmark}</p>
+    <p><strong>Lowest Marks: </strong> ${lowestmark}</p>
+    <p><strong>Passed Student: </strong> 
     ${passedstudent.map(
         student=>student.name
     ).join(", ")}</p>
-    <p><strong>Fail Student:</strong> 
+    <p><strong>Fail Student: </strong> 
     ${failstudent.map(
         student=>student.name
     ).join(", ")}</p>
-    <p><strong>Total Student:</strong> ${student.length}</p>
+    <p><strong>Total Student: </strong> ${student.length}</p>
     `
 }
 
